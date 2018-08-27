@@ -20,7 +20,7 @@
 ## 3.1 下载代码
 
 ```bash
-# git clone git@github.com:wangy8961/python3-concurrency.git
+# git clone https://github.com/wangy8961/python3-concurrency.git
 ```
 
 ## 3.2 准备环境
