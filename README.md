@@ -13,3 +13,58 @@
 - [Python3爬虫系列04 (实验) - 多进程并发下载](http://www.madmalls.com/blog/post/multi-process-for-python3/)
 - [Python3爬虫系列05 (实验) - 多线程并发下载](http://www.madmalls.com/blog/post/multi-thread-for-python/)
 - [Python3爬虫系列09 (实验) - 使用asyncio+aiohttp并发下载](http://www.madmalls.com/blog/post/aiohttp-howto-in-python3/)
+
+
+# 3. 使用方法
+
+## 3.1 下载代码
+
+```bash
+# git clone git@github.com:wangy8961/python3-concurrency.git
+```
+
+## 3.2 准备环境
+
+### (1) Server
+
+为防止DDoS攻击，本次测试需要在本地搭建一个HTTP测试服务器，具体方法参考 [Python3爬虫系列03 (实验) - 同步阻塞下载](http://www.madmalls.com/blog/post/sequential-download-for-python/)
+
+### (2) Client
+
+爬虫客户端所在的操作系统如果是`Linux`:
+
+```bash
+# pip install -r requirements-linux.txt
+```
+
+爬虫客户端所在的操作系统如果是`Windows`:
+
+```bash
+# pip install -r requirements-win32.txt
+```
+
+## 3.3 测试
+
+### (1) 依序下载
+
+```python
+# python sequential.py
+```
+
+### (2) 多进程下载
+
+```python
+# python processpool.py
+```
+
+### (3) 多线程下载
+
+```python
+# python threadpool.py
+```
+
+### (4) 异步下载
+
+```python
+# python asynchronous.py
+```
