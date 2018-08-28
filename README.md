@@ -1,3 +1,16 @@
+# [python3-concurrency](http://www.madmalls.com/blog/category/python3-spider/)
+
+[![Python](https://img.shields.io/badge/python-v3.4%2B-blue.svg)](https://www.python.org/)
+[![aiohttp](https://img.shields.io/badge/aiohttp-v3.3.2-brightgreen.svg)](https://aiohttp.readthedocs.io/en/stable/)
+[![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-v4.6.3-orange.svg)](https://pypi.org/project/beautifulsoup4/)
+[![requests](https://img.shields.io/badge/requests-v2.19.1-yellow.svg)](http://docs.python-requests.org/en/master/)
+[![pymongo](https://img.shields.io/badge/pymongo-v3.7.1-red.svg)](https://pypi.org/project/pymongo/)
+[![progressbar2](https://img.shields.io/badge/progressbar2-v3.38.0-lightgrey.svg)](https://pypi.org/project/progressbar2/)
+
+
+![](http://www.madmalls.com/admin/medias/uploaded/python3-concurrency-1016d526.png)
+
+
 # 1. 理论
 
 - [Python3爬虫系列01 (理论) - I/O Models 阻塞 非阻塞 同步 异步](http://www.madmalls.com/blog/post/io-models/)
@@ -15,56 +28,74 @@
 - [Python3爬虫系列09 (实验) - 使用asyncio+aiohttp并发下载](http://www.madmalls.com/blog/post/aiohttp-howto-in-python3/)
 
 
-# 3. 使用方法
+# 3. 实战
 
-## 3.1 下载代码
+- [Python3爬虫系列10 (实战) - 爬取妹子图 第一弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-01/)
+- [Python3爬虫系列11 (实战) - 爬取妹子图 第二弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-02/)
 
-```bash
-# git clone https://github.com/wangy8961/python3-concurrency.git
-```
 
-## 3.2 准备环境
+# 4. 使用方法
 
-### (1) Server
+## 4.1 Server
 
 为防止DDoS攻击，本次测试需要在本地搭建一个HTTP测试服务器，具体方法参考 [Python3爬虫系列03 (实验) - 同步阻塞下载](http://www.madmalls.com/blog/post/sequential-download-for-python/)
 
-### (2) Client
+## 4.2 Client
 
-爬虫客户端所在的操作系统如果是`Linux`:
-
-```bash
-# pip install -r requirements-linux.txt
-```
-
-爬虫客户端所在的操作系统如果是`Windows`:
+### (1) 下载代码
 
 ```bash
-# pip install -r requirements-win32.txt
+[root@CentOS ~]# git clone https://github.com/wangy8961/python3-concurrency.git
+[root@CentOS ~]# cd python3-concurrency/
 ```
 
-## 3.3 测试
+### (2) 准备虚拟环境
 
-### (1) 依序下载
+如果你的操作系统是`Linux`:
 
-```python
-# python sequential.py
+```bash
+[root@CentOS python3-concurrency]# python3 -m venv venv3
+[root@CentOS python3-concurrency]# source venv3/bin/activate
 ```
 
-### (2) 多进程下载
+> `Windows`激活虚拟环境的命令是: `venv3\Scripts\activate`
 
-```python
-# python processpool.py
+### (3) 安装依赖包
+
+如果你的操作系统是`Linux`:
+
+```bash
+(venv3) [root@CentOS python3-concurrency]# pip install -r requirements-linux.txt
 ```
 
-### (3) 多线程下载
+如果你的操作系统是`Windows`（不会使用`uvloop`）:
 
-```python
-# python threadpool.py
+```bash
+(venv3) C:\Users\wangy> pip install -r requirements-win32.txt
 ```
 
-### (4) 异步下载
+### (4) 测试
+
+依序下载：
 
 ```python
-# python asynchronous.py
+(venv3) [root@CentOS python3-concurrency]# python sequential.py
+```
+
+多进程下载：
+
+```python
+(venv3) [root@CentOS python3-concurrency]# python processpool.py
+```
+
+多线程下载：
+
+```python
+(venv3) [root@CentOS python3-concurrency]# python threadpool.py
+```
+
+异步下载：
+
+```python
+(venv3) [root@CentOS python3-concurrency]# python asynchronous.py
 ```
