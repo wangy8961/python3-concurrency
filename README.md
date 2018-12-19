@@ -8,7 +8,7 @@
 [![progressbar2](https://img.shields.io/badge/progressbar2-v3.38.0-lightgrey.svg)](https://pypi.org/project/progressbar2/)
 
 
-![](http://www.madmalls.com/admin/medias/uploaded/python3-concurrency-1016d526.png)
+![](http://www.madmalls.com/api/medias/uploaded/python3-concurrency-1016d526.png)
 
 
 # 1. 理论
