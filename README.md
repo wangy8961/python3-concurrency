@@ -11,36 +11,28 @@
 ![](http://www.madmalls.com/api/medias/uploaded/python3-concurrency-1016d526.png)
 
 
-# 1. 理论
+# 1. 爬虫系列
 
-- [Python3爬虫系列01 (理论) - I/O Models 阻塞 非阻塞 同步 异步](http://www.madmalls.com/blog/post/io-models/)
-- [Python3爬虫系列02 (理论) - Python并发编程](http://www.madmalls.com/blog/post/concurrent-programming-for-python/)
-- [Python3爬虫系列06 (理论) - 可迭代对象、迭代器、生成器](http://www.madmalls.com/blog/post/iterable-iterator-and-generator-in-python/)
-- [Python3爬虫系列07 (理论) - 协程](http://www.madmalls.com/blog/post/coroutine-in-python/)
-- [Python3爬虫系列08 (理论) - 使用asyncio模块实现并发](http://www.madmalls.com/blog/post/asyncio-howto-in-python3/)
-
-
-# 2. 实验
-
-- [Python3爬虫系列03 (实验) - 同步阻塞下载](http://www.madmalls.com/blog/post/sequential-download-for-python/)
-- [Python3爬虫系列04 (实验) - 多进程并发下载](http://www.madmalls.com/blog/post/multi-process-for-python3/)
-- [Python3爬虫系列05 (实验) - 多线程并发下载](http://www.madmalls.com/blog/post/multi-thread-for-python/)
-- [Python3爬虫系列09 (实验) - 使用asyncio+aiohttp并发下载](http://www.madmalls.com/blog/post/aiohttp-howto-in-python3/)
+- [Python 3 爬虫｜第1章：I/O Models 阻塞/非阻塞 同步/异步](https://madmalls.com/blog/post/io-models/)
+- [Python 3 爬虫｜第2章：Python 并发编程](https://madmalls.com/blog/post/concurrent-programming-for-python/)
+- [Python 3 爬虫｜第3章：同步阻塞下载](https://madmalls.com/blog/post/sequential-download-for-python/)
+- [Python 3 爬虫｜第4章：多进程并发下载](https://madmalls.com/blog/post/multi-process-for-python3/)
+- [Python 3 爬虫｜第5章：多线程并发下载](https://madmalls.com/blog/post/multi-thread-for-python/)
+- [Python 3 爬虫｜第6章：可迭代对象 / 迭代器 / 生成器](https://madmalls.com/blog/post/iterable-iterator-and-generator-in-python/)
+- [Python 3 爬虫｜第7章：协程 Coroutines](https://madmalls.com/blog/post/coroutine-in-python/)
+- [Python 3 爬虫｜第8章：使用 asyncio 模块实现并发](https://madmalls.com/blog/post/asyncio-howto-in-python3/)
+- [Python 3 爬虫｜第9章：使用 asyncio + aiohttp 并发下载](https://madmalls.com/blog/post/aiohttp-howto-in-python3/)
+- [Python 3 爬虫｜第10章：爬取少量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-01/)
+- [Python 3 爬虫｜第11章：爬取海量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-02/)
 
 
-# 3. 实战
+# 2. 使用方法
 
-- [Python3爬虫系列10 (实战) - 爬取妹子图 第一弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-01/)
-- [Python3爬虫系列11 (实战) - 爬取妹子图 第二弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-02/)
-
-
-# 4. 使用方法
-
-## 4.1 Server
+## 2.1 Server
 
 为防止DDoS攻击，本次测试需要在本地搭建一个HTTP测试服务器，具体方法参考 [Python3爬虫系列03 (实验) - 同步阻塞下载](http://www.madmalls.com/blog/post/sequential-download-for-python/)
 
-## 4.2 Client
+## 2.2 Client
 
 ### (1) 下载代码
 
